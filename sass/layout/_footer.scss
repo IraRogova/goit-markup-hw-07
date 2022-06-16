@@ -1,0 +1,227 @@
+.footer {
+    /* display: flex; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    /* padding-left: 215px; */
+    background: #2f303a;
+  
+  }
+  
+  
+  
+  
+  .footer-list:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  .footer .accent {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-white);
+  }
+  
+  .footer-addres {
+    /* display: flex; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  
+    color: var(--main-white);
+  }
+  
+  .footer-mail {
+    /* display: flex; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .footer-phone {
+    /* display: flex; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+   .footer-flex{
+    display: flex;
+    align-items: baseline;
+    
+  
+  }
+  
+   .join-section{
+    margin-left: 70px;
+    /* margin-top: 72px; */
+  } 
+  
+  
+  
+  
+  .join-title{
+  
+  display: flex;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color:var(--main-white);
+  }
+  
+  
+  
+  .social-list-footer {
+    display: flex;
+    /* justify-content: center; */
+  }
+  
+  .social-list-item-footer{
+    display: block;
+  }
+  
+  
+  .social-list-item-footer:not(:last-child){
+    margin-right: 10px;
+  }
+  
+  .social-list-link-footer {
+    fill:var(--main-white);
+  }
+  
+  .social-list-link-footer{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social-list-link-footer:hover,
+  .social-list-link-footer:focus {
+    background-color: var(--accent-color);
+  }
+  
+  .social-list-link-footer:hover .social-list-icon-footer,
+  .social-list-link-footer:focus .social-list-icon-footer {
+    fill: var(--main-white);
+  }
+  
+  .subscribe-container {
+    
+    margin-left: 93px;
+  }
+  
+  .subscribe-form {
+    position: relative;
+    display: flex;
+  }
+  
+  .subscribe-lable{
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  .subscribe-title {
+    display: flex;
+    margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: var(--main-white);
+  }
+  
+  .subscribe-email{
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2F303A;
+  outline: 0;
+  outline-offset: 0;
+  color: var(--main-white);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .subscribe-email:hover, .subscribe-email:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form .input::placeholder {
+  
+  margin-left: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  
+  letter-spacing: 0.03em;
+  
+  color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .subscribe-btn{
+   display: flex;
+   align-items:center;
+  padding-left: 28px;
+  padding-right: 29px;
+  margin-left: 12px;
+  min-width: 200px;
+  height: 50px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .subscribe-btn:hover, .subscribe-btn:focus{
+      background: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .subscribe-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: var(--main-white);
+  }
+  
