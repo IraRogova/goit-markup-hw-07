@@ -2,19 +2,19 @@
     padding-bottom: 0px;
   }
   
-  .about-flex {
+  .about__flex {
     display: flex;
   }
   
-  .about-flex .item {
+  .about__flex .item {
     width: 270px;
   }
   
-  .about-flex .item + .item {
+  .about__flex .item + .item {
     margin-left: 30px;
   }
   
-  .about-title {
+  .about__title {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -23,7 +23,7 @@
     text-transform: uppercase;
   }
   
-  .about-description {
+  .about__description {
    
     font-weight: 400;
     font-size: 14px;
@@ -33,7 +33,7 @@
     color: var(--accent-black);
   }
   
-  .about-list-icons{
+  .about__list-icons{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@
   
   }
   
-  .about-list-icons-pic {
+  .about__icons_pic {
     display: block;
     
   }

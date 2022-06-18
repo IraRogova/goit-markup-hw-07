@@ -473,19 +473,19 @@ ul {
   padding-bottom: 0px;
 }
 
-.about-flex {
+.about__flex {
   display: flex;
 }
 
-.about-flex .item {
+.about__flex .item {
   width: 270px;
 }
 
-.about-flex .item + .item {
+.about__flex .item + .item {
   margin-left: 30px;
 }
 
-.about-title {
+.about__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -494,7 +494,7 @@ ul {
   text-transform: uppercase;
 }
 
-.about-description {
+.about__description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -502,7 +502,7 @@ ul {
   color: var(--accent-black);
 }
 
-.about-list-icons {
+.about__list-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -513,27 +513,27 @@ ul {
   border-radius: 4px;
 }
 
-.about-list-icons-pic {
+.about__icons_pic {
   display: block;
 }
 
-img {
+.examples__img {
   display: block;
 }
 
-.example-flex {
+.examples__flex {
   display: flex;
 }
 
-.example-flex .item + .item {
+.examples__flex .item + .item {
   margin-left: 30px;
 }
 
-.img-wrapper {
+.examples__img-wrapper {
   position: relative;
 }
 
-.content-container {
+.examples__content-container {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -543,7 +543,7 @@ img {
   padding: 27px 82px;
 }
 
-.img-description {
+.examples__img-description {
   display: block;
   align-items: center;
   font-family: "Roboto";

@@ -1,23 +1,23 @@
 
-img {
+.examples__img {
     display: block;
   }
   
-  .example-flex {
+  .examples__flex {
     display: flex;
   }
   
-  .example-flex .item + .item {
+  .examples__flex .item + .item {
     margin-left: 30px;
   }
   
-  .img-wrapper {
+  .examples__img-wrapper {
     
     position: relative;
     
   }
   
-  .content-container {
+  .examples__content-container {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -27,7 +27,7 @@ img {
     padding: 27px 82px;
   }
    
-   .img-description {
+   .examples__img-description {
      display: block;
      align-items:center;
      font-family: 'Roboto';
