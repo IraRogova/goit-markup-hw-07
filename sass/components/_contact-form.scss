@@ -1,38 +1,40 @@
 .contact-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-title {
+  margin-bottom: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.contact-form-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.contact-form-icon {
+  position: absolute;
+  top: 65%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contact-form-input:focus + & {
+    fill: var(--accent-color);
   }
-  
-  .contact-form-title {
-    margin-bottom: 12px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color:#212121;;
-  }
-  
-  .contact-form-field {
-    position: relative;
-    margin-bottom: 10px;
-  }
-  
-  .contact-form-icon{
-    position: absolute;
-    top: 65%;
-    left: 12px;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-   
-  }
-  
-  .contact-form-field-description {
+}
+
+.contact-form-field-description {
   display: block;
   margin-bottom: 4px;
   font-family: 'Roboto';
@@ -41,56 +43,45 @@
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  
+
   color: var(--accent-black);
-  }
-  
-  .contact-form-input{
-    
-    width: 100%;
-    height: 40px;
-    padding-left: 42px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-  
-  }
-  
-  
-  .contact-form-input:focus {
-  outline: none;
-  border: 1px solid #2196F3;
-  }
-  
-  
-  .contact-form-input:focus + .contact-form-icon {
-    
-    fill: var(--accent-color);
-  }
-  
-  .contact-form-comment{
-    margin-bottom: 20px;
-    margin-top: 4px;
-    resize: none;
-    width: 100%;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 16px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-  }
-  
-  .contact-form-comment:focus {
+}
+
+.contact-form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
     outline: none;
-    border: 1px solid #2196F3;
-    }
-  
-    .contact-form-checkbox-lable {
-    display: flex;
-    align-items:center; 
-    font-family: 'Roboto';
+    border: 1px solid #2196f3;
+  }
+}
+
+.contact-form-comment {
+  margin-bottom: 20px;
+  margin-top: 4px;
+  resize: none;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border: 1px solid #2196f3;
+  }
+}
+
+.contact-form-checkbox-lable {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -98,63 +89,58 @@
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
-  
-    }
-  
-    .contact-form-checkbox-lable::before {
-      display: block;
-      margin-right: 7px;
-      width: 16px;
-      height: 15px;
-      content: '';
-      cursor: pointer;
-  border-radius: 2px;
-  border: 1px solid #212121;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    .contact-form-checkbox:checked + .contact-form-checkbox-lable::before {
-      background-color: var(--accent-color);
-      background-image: url("../images/icons/icon-check.svg");
-      background-size:contain;
-      background-position: center;
-      /* background-origin: border-box; */
-      border: 1px solid var(--accent-color);
-      
-    }
-  
-    .contact-form-checkbox:focus + .contact-form-checkbox-lable::before {
-      border: 1px solid var(--accent-color);
-    }
-    
-    .conatct-form-checkbox-link {
-      color: var(--accent-color);
-      font-size: inherit;
-    }
-  
-    .contact-form-btn{
-    align-self: center;
-    padding: 10px 32px;
-    border-radius: 4px;
-    min-width: 200px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
+
+  &::before {
+    display: block;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    content: '';
     cursor: pointer;
-    background: var(--accent-color);
-    color: var(--main-white);
+    border-radius: 2px;
+    border: 1px solid #212121;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contact-form-checkbox:checked + & {
+      background-color: var(--accent-color);
+      background-image: url('../images/icons/icon-check.svg');
+      background-size: contain;
+      background-position: center;
+      border: 1px solid var(--accent-color);
+    }
+
+    .contact-form-checkbox:focus + & {
+      border: 1px solid var(--accent-color);
+    }
+  }
+}
+
+.conatct-form-checkbox-link {
+  color: var(--accent-color);
+  font-size: inherit;
+}
+
+.contact-form-btn {
+  align-self: center;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  background: var(--accent-color);
+  color: var(--main-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: var(--accent-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-    }
-  
-    .contact-form-btn:hover,
-    .contact-form-btn:focus {
-      background: #188ce8;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      
-    }
-    
+  }
+}

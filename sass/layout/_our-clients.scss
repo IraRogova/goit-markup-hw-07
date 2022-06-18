@@ -1,49 +1,45 @@
-
-
 .our-clients-flex {
-    display: flex;
-    align-items:center;
+  display: flex;
+  align-items: center;
+}
+
+.our-clients-flex .retangle + .retangle {
+  margin-left: 30px;
+}
+
+.retangle {
+  display: flex;
+  width: 170px;
+  height: 92px;
+}
+
+.our-clients-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
   }
-  
-  .our-clients-flex .retangle + .retangle {
-    margin-left: 30px;
-  }
-  
-  .retangle {
-    display:flex;
-    width: 170px;
-    height: 92px;
-  }
-  
-   
-   .our-clients-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height:100%;
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .retangle-logo {
-    fill: #AFB1B8;
-  }
-  
-  .retangle-logo {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .our-clients-logo:hover .retangle-logo,
-  .our-clients-logo:focus .retangle-logo {
+}
+
+.retangle-logo {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .our-clients-logo:hover &,
+  .our-clients-logo:focus & {
     fill: var(--accent-color);
   }
-  
-  
-  
-  .our-clients-logo:hover,
-  .our-clients-logoe:focus {
-    border: 1px solid #2196F3;
-  }
-  
+}
+
+// .our-clients-logo:hover,
+// .our-clients-logoe:focus {
+//   border: 1px solid #2196F3;
+// }
