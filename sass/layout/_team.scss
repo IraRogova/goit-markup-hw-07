@@ -2,7 +2,8 @@
   background: #f5f4fa;
 }
 
-.team-title {
+
+.team__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -10,7 +11,8 @@
   letter-spacing: 0.03em;
 }
 
-.subtitle {
+
+.team__subtitle {
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -21,20 +23,17 @@
   color: var(--accent-black);
 }
 
-.team-flex {
+.team__flex {
   display: flex;
 }
 
-.team-flex .item + .item {
+.team__flex .item + .item {
   margin-left: 30px;
 }
 
-.pic-discription {
+.team__pic-discription {
   padding: 30px 15px;
   text-align: center;
-}
-
-.pic-discription {
   padding-left: 10px;
   padding-right: 10px;
   background-color: var(--main-white);
@@ -42,3 +41,5 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+
