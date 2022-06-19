@@ -429,12 +429,12 @@ img {
   fill: var(--accent-black);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-contact_hover_blue:hover .nav-contact__icon, .nav-contact_hover_blue:focus .nav-contact__icon {
+.nav-contact--hover:hover .nav-contact__icon, .nav-contact--hover:focus .nav-contact__icon {
   fill: var(--accent-color);
 }
 
-.nav-contact_hover_blue:hover,
-.nav-contact_hover_blue:focus {
+.nav-contact--hover:hover,
+.nav-contact--hover:focus {
   color: var(--accent-color);
 }
 
@@ -885,11 +885,11 @@ img {
   color: var(--accent-color);
 }
 
-.our-work_img_hover {
+.our-work__img--hover {
   position: relative;
   overflow: hidden;
 }
-.our-work_img_hover::before {
+.our-work__img--hover::before {
   display: inline-block;
   position: absolute;
   content: "";
@@ -900,12 +900,12 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-work__link-shadow:hover .our-work_img_hover::before {
+.our-work__link-shadow:hover .our-work__img--hover::before {
   opacity: 1;
   transform: translateY(0);
 }
 
-.our-work_content_hover {
+.our-work__content--hover {
   position: absolute;
   top: 0;
   right: 0;
@@ -916,12 +916,12 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-work__link-shadow:hover .our-work_content_hover {
+.our-work__link-shadow:hover .our-work__content--hover {
   opacity: 1;
   transform: translateY(0);
 }
 
-.our-work_text_hover {
+.our-work__text--hover {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;

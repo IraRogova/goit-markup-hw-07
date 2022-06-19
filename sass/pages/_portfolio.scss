@@ -63,9 +63,7 @@
   border: 1px solid #eeeeee;
 }
 
-// .our-work__project-name {
-//   margin-bottom: 4px;
-// }
+
 
 .our-work__item {
   width: 370px;
@@ -101,7 +99,7 @@
   color: var(--accent-color);
 }
 
-.our-work_img_hover {
+.our-work__img--hover {
   position: relative;
   overflow: hidden;
 
@@ -125,7 +123,7 @@
   }
 }
 
-.our-work_content_hover {
+.our-work__content--hover {
   position: absolute;
   top: 0;
   right: 0;
@@ -144,7 +142,7 @@
   }
 }
 
-.our-work_text_hover {
+.our-work__text--hover {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;

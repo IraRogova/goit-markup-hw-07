@@ -125,13 +125,13 @@
   fill: var(--accent-black);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .nav-contact_hover_blue:hover &,
-  .nav-contact_hover_blue:focus & {
+  .nav-contact--hover:hover &,
+  .nav-contact--hover:focus & {
     fill: var(--accent-color);
   }
 }
 
-.nav-contact_hover_blue:hover,
-.nav-contact_hover_blue:focus {
+.nav-contact--hover:hover,
+.nav-contact--hover:focus {
   color: var(--accent-color);
 }
